@@ -1,0 +1,23 @@
+-mthumb -Lcubemx_source/Drivers/CMSIS/Include -Lcubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc -Lcubemx_source/Core/Inc -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -T /home/yd/桌面/f411demo/stm32f411ceu6_template/cubemx_source/STM32F411CEUX_FLASH.ld -Wl,--gc-sections -Wl,--print-memory-usage --specs=nosys.specs --specs=nano.specs
+-Wl,-Map=./build/Debug/stm32f411CEU6_demo.map
+-o ./build/Debug/stm32f411CEU6_demo.elf ./build/Debug/.obj/app.o
+./build/Debug/.obj/cubemx_source/Core/Src/main.o
+./build/Debug/.obj/cubemx_source/Core/Src/stm32f4xx_hal_msp.o
+./build/Debug/.obj/cubemx_source/Core/Src/stm32f4xx_it.o
+./build/Debug/.obj/cubemx_source/Core/Src/syscalls.o
+./build/Debug/.obj/cubemx_source/Core/Src/sysmem.o
+./build/Debug/.obj/cubemx_source/Core/Src/system_stm32f4xx.o
+./build/Debug/.obj/cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+./build/Debug/.obj/cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+./build/Debug/.obj/cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o
+./build/Debug/.obj/cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o
+./build/Debug/.obj/cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o
+./build/Debug/.obj/cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o
+./build/Debug/.obj/cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o
+./build/Debug/.obj/cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o
+./build/Debug/.obj/cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+./build/Debug/.obj/cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o
+./build/Debug/.obj/cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
+./build/Debug/.obj/cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+./build/Debug/.obj/cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
+./build/Debug/.obj/cubemx_source/startup_stm32f411xe.o -lm

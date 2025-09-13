@@ -1,0 +1,27 @@
+build/Debug/.obj/cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o: \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+ cubemx_source/Core/Inc/stm32f4xx_hal_conf.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+ cubemx_source/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+ cubemx_source/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+ cubemx_source/Drivers/CMSIS/Include/core_cm4.h \
+ cubemx_source/Drivers/CMSIS/Include/cmsis_version.h \
+ cubemx_source/Drivers/CMSIS/Include/cmsis_compiler.h \
+ cubemx_source/Drivers/CMSIS/Include/cmsis_gcc.h \
+ cubemx_source/Drivers/CMSIS/Include/mpu_armv7.h \
+ cubemx_source/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+ cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h

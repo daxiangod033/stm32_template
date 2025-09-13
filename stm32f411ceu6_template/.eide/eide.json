@@ -1,0 +1,150 @@
+{
+  "name": "stm32f411CEU6_demo",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    "cubemx_source"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [
+      {
+        "path": "app.c"
+      },
+      {
+        "path": "app.h"
+      }
+    ],
+    "folders": []
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "789dcd4e57a358b96d240f7e90eec6e0"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "single",
+        "useCustomScatterFile": true,
+        "scatterFilePath": "cubemx_source\\STM32F411CEUX_FLASH.ld",
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x5000"
+              },
+              "isChecked": true,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x08000000",
+                "size": "0x10000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            }
+          ]
+        },
+        "options": "null",
+        "archExtensions": ""
+      },
+      "uploader": "Custom",
+      "uploadConfig": {
+        "bin": "/home/yd/桌面/f411demo/stm32f4xx_cubemx-template/build/Debug/stm32f4xx_cubemx-template.hex",
+        "commandLine": "stm32flash -w /home/yd/桌面/f411demo/stm32f4xx_cubemx-template/build/Debug/stm32f4xx_cubemx-template.hex -v -g 0x0 /dev/ttyUSB0",
+        "eraseChipCommand": ""
+      },
+      "uploadConfigMap": {
+        "pyOCD": {
+          "bin": "",
+          "targetName": "STM32F407VGTX",
+          "baseAddr": "0x08000000",
+          "speed": "4M",
+          "config": ".eide/debug.pyocd.yaml",
+          "otherCmds": ""
+        },
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "ST",
+            "cpuName": "STM32F411CE"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        },
+        "STLink": {
+          "bin": "",
+          "proType": "SWD",
+          "resetMode": "default",
+          "runAfterProgram": true,
+          "speed": 4000,
+          "address": "0x08000000",
+          "elFile": "None",
+          "optionBytes": ".eide/debug.st.option.bytes.ini",
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [],
+        "libList": [
+          "cubemx_source/Drivers/CMSIS/Include",
+          "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc",
+          "cubemx_source/Core/Inc"
+        ],
+        "defineList": [
+          "STM32F407xx",
+          "USE_FULL_LL_DRIVER",
+          "USE_HAL_DRIVER"
+        ]
+      },
+      "builderOptions": {
+        "GCC": {
+          "version": 5,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "$float-abi-type": "hard",
+            "output-debug-info": "enable",
+            "misc-control": "--specs=nosys.specs --specs=nano.specs"
+          },
+          "c/cpp-compiler": {
+            "language-c": "c99",
+            "language-cpp": "c++14",
+            "optimization": "level-debug",
+            "warnings": "all-warnings",
+            "one-elf-section-per-function": true,
+            "one-elf-section-per-data": true
+          },
+          "asm-compiler": {},
+          "linker": {
+            "output-format": "elf",
+            "LIB_FLAGS": "-lm",
+            "$toolName": "auto",
+            "$outputTaskExcludes": [
+              ".bin",
+              ".s19"
+            ],
+            "remove-unused-input-sections": true
+          }
+        }
+      }
+    }
+  },
+  "version": "3.6"
+}

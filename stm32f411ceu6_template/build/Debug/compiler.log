@@ -1,0 +1,20 @@
+>>> cc
+
+./cubemx_source/Core/Src/main.c: In function 'main':
+./cubemx_source/Core/Src/main.c:12:3: warning: implicit declaration of function 'SystemClock_Config'; did you mean 'SysTick_Config'? [-Wimplicit-function-declaration]
+   12 |   SystemClock_Config();   // 25 MHz HSE → 96 MHz
+      |   ^~~~~~~~~~~~~~~~~~
+      |   SysTick_Config
+./cubemx_source/Core/Src/main.c: At top level:
+./cubemx_source/Core/Src/main.c:27:6: warning: conflicting types for 'SystemClock_Config'; have 'void(void)'
+   27 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+./cubemx_source/Core/Src/main.c:12:3: note: previous implicit declaration of 'SystemClock_Config' with type 'void(void)'
+   12 |   SystemClock_Config();   // 25 MHz HSE → 96 MHz
+      |   ^~~~~~~~~~~~~~~~~~
+
+>>> ld
+
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1584 B       128 KB      1.21%
+           FLASH:        4520 B       512 KB      0.86%

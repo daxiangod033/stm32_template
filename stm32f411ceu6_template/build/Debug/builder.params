@@ -1,0 +1,121 @@
+{
+    "name": "stm32f411CEU6_demo",
+    "target": "Debug",
+    "toolchain": "GCC",
+    "toolchainLocation": "/usr",
+    "toolchainCfgFile": "/home/yd/.vscode/extensions/cl.eide-3.25.3/res/data/models/arm.gcc.model.json",
+    "buildMode": "fast|multhread",
+    "showRepathOnLog": true,
+    "threadNum": 16,
+    "rootDir": "/home/yd/桌面/f411demo/stm32f411ceu6_template",
+    "dumpPath": "build/Debug",
+    "outDir": "build/Debug",
+    "incDirs": [
+        "cubemx_source",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+        "cubemx_source/Drivers/CMSIS/Include",
+        "cubemx_source/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+        "cubemx_source/Core/Src",
+        "cubemx_source/Core/Inc"
+    ],
+    "libDirs": [
+        "cubemx_source/Drivers/CMSIS/Include",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Inc",
+        "cubemx_source/Core/Inc"
+    ],
+    "defines": [
+        "STM32F407xx",
+        "USE_FULL_LL_DRIVER",
+        "USE_HAL_DRIVER"
+    ],
+    "sourceList": [
+        "app.c",
+        "cubemx_source/Core/Src/main.c",
+        "cubemx_source/Core/Src/stm32f4xx_hal_msp.c",
+        "cubemx_source/Core/Src/stm32f4xx_it.c",
+        "cubemx_source/Core/Src/syscalls.c",
+        "cubemx_source/Core/Src/sysmem.c",
+        "cubemx_source/Core/Src/system_stm32f4xx.c",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c",
+        "cubemx_source/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c",
+        "cubemx_source/startup_stm32f411xe.s"
+    ],
+    "alwaysInBuildSources": [],
+    "sourceParams": {},
+    "options": {
+        "version": 5,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [],
+        "global": {
+            "$float-abi-type": "hard",
+            "output-debug-info": "enable",
+            "misc-control": "--specs=nosys.specs --specs=nano.specs",
+            "toolPrefix": "arm-none-eabi-",
+            "microcontroller-cpu": "cortex-m4-sp",
+            "microcontroller-fpu": "cortex-m4-sp",
+            "microcontroller-float": "cortex-m4-sp",
+            "$arch-extensions": "",
+            "$clang-arch-extensions": "",
+            "$armlink-arch-extensions": ""
+        },
+        "c/cpp-compiler": {
+            "language-c": "c99",
+            "language-cpp": "c++14",
+            "optimization": "level-debug",
+            "warnings": "all-warnings",
+            "one-elf-section-per-function": true,
+            "one-elf-section-per-data": true
+        },
+        "asm-compiler": {},
+        "linker": {
+            "output-format": "elf",
+            "LIB_FLAGS": "-lm",
+            "$toolName": "gcc",
+            "$outputTaskExcludes": [
+                ".bin",
+                ".s19"
+            ],
+            "remove-unused-input-sections": true,
+            "link-scatter": [
+                "/home/yd/桌面/f411demo/stm32f411ceu6_template/cubemx_source/STM32F411CEUX_FLASH.ld"
+            ]
+        }
+    },
+    "env": {
+        "workspaceFolder": "/home/yd/桌面/f411demo/stm32f411ceu6_template",
+        "workspaceFolderBasename": "stm32f411ceu6_template",
+        "OutDir": "/home/yd/桌面/f411demo/stm32f411ceu6_template/build/Debug",
+        "OutDirRoot": "build",
+        "OutDirBase": "build/Debug",
+        "ProjectName": "stm32f411CEU6_demo",
+        "ConfigName": "Debug",
+        "ProjectRoot": "/home/yd/桌面/f411demo/stm32f411ceu6_template",
+        "ExecutableName": "/home/yd/桌面/f411demo/stm32f411ceu6_template/build/Debug/stm32f411CEU6_demo",
+        "ChipPackDir": "",
+        "ChipName": "",
+        "SYS_Platform": "linux",
+        "SYS_DirSep": "/",
+        "SYS_DirSeparator": "/",
+        "SYS_PathSep": ":",
+        "SYS_PathSeparator": ":",
+        "SYS_EOL": "\n",
+        "EIDE_BUILDER_DIR": "/home/yd/.vscode/extensions/cl.eide-3.25.3/res/tools/linux/unify_builder",
+        "EIDE_BINARIES_VER": "12.1.0",
+        "EIDE_PY3_CMD": "/usr/bin/python3",
+        "ToolchainRoot": "/usr"
+    },
+    "sysPaths": []
+}

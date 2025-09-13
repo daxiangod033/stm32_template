@@ -1,0 +1,6 @@
+tool: GCC
+fileName: 'stm32f411CEU6_demo.map'
+elfName: 'stm32f411CEU6_demo.elf'
+compilerName: '15:13.2.rel1-2'
+compilerFullName: 'arm-none-eabi-gcc (15:13.2.rel1-2) 13.2.1 20231009'
+compilerPath: '/usr/bin/arm-none-eabi-gcc'
