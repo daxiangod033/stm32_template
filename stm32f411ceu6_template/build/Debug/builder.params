@@ -7,7 +7,7 @@
     "buildMode": "fast|multhread",
     "showRepathOnLog": true,
     "threadNum": 16,
-    "rootDir": "/home/yd/桌面/f411demo/stm32f411ceu6_template",
+    "rootDir": "/home/yd/桌面/muban/stm32_template/stm32f411ceu6_template",
     "dumpPath": "build/Debug",
     "outDir": "build/Debug",
     "incDirs": [
@@ -90,20 +90,20 @@
             ],
             "remove-unused-input-sections": true,
             "link-scatter": [
-                "/home/yd/桌面/f411demo/stm32f411ceu6_template/cubemx_source/STM32F411CEUX_FLASH.ld"
+                "/home/yd/桌面/muban/stm32_template/stm32f411ceu6_template/cubemx_source/STM32F411CEUX_FLASH.ld"
             ]
         }
     },
     "env": {
-        "workspaceFolder": "/home/yd/桌面/f411demo/stm32f411ceu6_template",
+        "workspaceFolder": "/home/yd/桌面/muban/stm32_template/stm32f411ceu6_template",
         "workspaceFolderBasename": "stm32f411ceu6_template",
-        "OutDir": "/home/yd/桌面/f411demo/stm32f411ceu6_template/build/Debug",
+        "OutDir": "/home/yd/桌面/muban/stm32_template/stm32f411ceu6_template/build/Debug",
         "OutDirRoot": "build",
         "OutDirBase": "build/Debug",
         "ProjectName": "stm32f411CEU6_demo",
         "ConfigName": "Debug",
-        "ProjectRoot": "/home/yd/桌面/f411demo/stm32f411ceu6_template",
-        "ExecutableName": "/home/yd/桌面/f411demo/stm32f411ceu6_template/build/Debug/stm32f411CEU6_demo",
+        "ProjectRoot": "/home/yd/桌面/muban/stm32_template/stm32f411ceu6_template",
+        "ExecutableName": "/home/yd/桌面/muban/stm32_template/stm32f411ceu6_template/build/Debug/stm32f411CEU6_demo",
         "ChipPackDir": "",
         "ChipName": "",
         "SYS_Platform": "linux",
